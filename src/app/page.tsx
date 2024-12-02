@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { useEffect, useState } from 'react'
@@ -34,9 +33,9 @@ export default function Home() {
               Get an individualized recommendation from 5-7 "decision guide" questions helping you prioritize what is most important for your Medicare needs.
             </p>
             <Link href="/questionnaire">
-              <Button size="lg" className="bg-[#005EB8] hover:bg-[#003F7A]">
+              <button className="px-6 py-3 bg-[#005EB8] hover:bg-[#003F7A] text-white rounded-lg font-medium">
                 Get Started
-              </Button>
+              </button>
             </Link>
           </div>
 
@@ -104,7 +103,9 @@ export default function Home() {
             <p>It only takes a few minutes to complete - there are no wrong answers.</p>
           </div>
           <Link href="/questionnaire">
-            <Button size="lg" className="bg-[#005EB8] hover:bg-[#003F7A]">Take the Quiz</Button>
+            <button className="px-6 py-3 bg-[#005EB8] hover:bg-[#003F7A] text-white rounded-lg font-medium">
+              Take the Quiz
+            </button>
           </Link>
         </section>
       </main>

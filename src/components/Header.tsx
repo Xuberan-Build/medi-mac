@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -26,7 +25,9 @@ export function Header() {
               About
             </Link>
             <Link href="/questionnaire">
-              <Button>Get Started</Button>
+              <button className="px-4 py-2 bg-[#005EB8] hover:bg-[#003F7A] text-white rounded-lg">
+                Get Started
+              </button>
             </Link>
           </div>
 
